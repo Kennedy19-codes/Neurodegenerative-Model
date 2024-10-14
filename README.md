@@ -1,6 +1,6 @@
 # Neurodegenerative Disease Prediction App
 
-This is a machine learning model using flask as platform stack that predicts diseases based on user-provided symptoms. The app allows users to input symptoms, and it processes the input to generate possible disease predictions using a predefined machine learning model or dataset.
+This repository contains a machine learning model using flask as platform stack that predicts diseases based on user-provided symptoms. The app allows users to input symptoms, and it processes the input to generate possible disease predictions using a predefined machine learning model or dataset.
 
 ## Table of Contents
 - [Features](#features)
