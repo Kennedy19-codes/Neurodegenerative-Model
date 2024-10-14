@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 20px;
+            color: #444;
+        }
+
+        strong {
+            color: #28a745;
+        }
+
+        a {
+            display: inline-block;
+            color: red;
+            
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>The predicted disease based on your symptoms is: <strong>{{ predicted_disease }}</strong></p>
+    <a href="/">Try Again</a>
+</body>
+</html>

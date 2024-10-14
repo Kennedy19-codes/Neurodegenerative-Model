@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Disease Prediction Based on Symptoms</h1>
+    <form action="/predict" method="POST">
+        <h3>Select your symptoms:</h3>
+        
+        <!-- Loop through the symptoms dynamically -->
+        {% for symptom in symptoms %}
+            <div>
+                <input type="checkbox" id="{{ symptom }}" name="symptoms" value="{{ symptom }}">
+                <label for="{{ symptom }}">{{ symptom.replace('_', ' ').title() }}</label> 
+            </div>
+        {% endfor %}
+        
+        <br>
+        <input type="submit" value="Predict Disease">
+    </form>
+</body>
+</html>
